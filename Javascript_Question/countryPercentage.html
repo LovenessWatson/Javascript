@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function percentageOfWorld1(population){
+            this.population=population;
+
+            this.percentage=function(){
+                let total = 7900;
+                let percent= (this.population/total)*100;
+                return `${percent}`;
+            }
+        }
+
+        let countryPercentage= new percentageOfWorld1(1441);
+        console.log(countryPercentage.percentage());
+
+        let countryPercentage2 = new percentageOfWorld1(2000);
+        console.log(countryPercentage2.percentage());
+
+        let countryPercentage3 = new percentageOfWorld1(1600);
+        console.log(countryPercentage3.percentage());
+    </script>
+</body>
+</html>

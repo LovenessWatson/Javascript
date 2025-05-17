@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Circle(r){
+             this.r=r;
+
+             this.getArea = function getArea(){
+                console.log(Math.PI*r*r);
+             }
+
+             this.getPerimeter = function getPerimeter(){
+                console.log(2*Math.PI*r);
+             }
+        }
+
+        let circy = new Circle(11);
+        circy.getArea();
+
+        let circy1 = new Circle(4.44)
+        circy1.getPerimeter();
+    </script>
+</body>
+</html>

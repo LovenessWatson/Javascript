@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .Form1,.Form2,.Form3{
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        body{
+            background-color: black;
+            padding-left: 40px;
+            padding-right: 40px;
+            color:white ;
+        }
+        input,select,textarea{
+            background-color: black;
+            color: white;
+        }
+        .Container{
+            background-color: grey;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="Container">
+        <form action="">
+            <fieldset><legend class="leg1" style="margin-left: 500px; color: white;">PIZZA ORDER FORM</legend>
+                <fieldset><legend>Delivery Address</legend>
+                   <div class="Form1">
+                      <div class="left">
+                        <label >Full Name : </label>
+                        <input style=" margin-left: 140px;" type="text" name="name" placeholder="Full Name"> <br> <br>
+                        <label>Phone : </label>
+                        <input style=" margin-left: 168px;" type="tel" name="Phone" placeholder="Phone"> <br> <br>
+                        <label>Password : </label> 
+                        <input style=" margin-left: 145px;" type="pasword" name="password" placeholder="Password"> <br> <br>
+                      </div>
+                      <div class="right" style="margin-left: 300px;">
+                        <label>Street Address</label>
+                        <input style=" margin-left: 100px;" type="text" name="address" placeholder="Address"> <br> <br>
+                        <label>Email</label>
+                        <input style=" margin-left: 155px;" type="email" name="email" placeholder="Email"> <br> <br>
+                      </div>
+                   </div>
+                </fieldset>
+                <fieldset><legend>Payment Information</legend>
+                    <div class="Form2">
+                       <div class="left1">
+                        <label>Card Type: </label>
+                        <select style="margin-left: 140px;" >
+                            <option>Visa</option>
+                            <option>Mastercard</option>
+                            <option>Discover</option>
+                        </select> <br> <br>
+                        <label>Name on Card: </label>
+                        <input style="margin-left:115px;" type="text " name="Cardname" placeholder="Name"> <br> <br>
+                       </div>
+                       <div class="right1" style="margin-left: 305px;">
+                        <label>Card Number: </label>
+                        <input style="margin-left: 100px;" type="text" name="Cardnumber" value="CardNumber"> <br> <br>
+                       </div>
+                    </div>
+                </fieldset>
+                <fieldset><legend>Customize Your Pizza</legend>
+                  <div class="Form3">
+                    <div class="left2">
+                        <label>Pizza size: </label>
+                     <select style="margin-left: 145px;">
+                        <option>Larger</option>
+                        <option>Medium</option>
+                        <option>Small</option>
+                     </select> <br> <br>
+                    <label> Spices: <label style="margin-left: 130px;"> Black pepper <input type="checkbox" > Bell peppers <input type="checkbox"> mayonnaise <input type="checkbox"> </label></label><br> <br>
+                        
+                         
+                    <label>Other Requirements</label>
+                    <textarea name="comment" id="comment" cols="12" rows="5" style="padding-top: 10px;">any other Requirements</textarea>
+                  </div>
+                  <div class="right2" >
+                      <label style="margin-left: 190px;">Quantity: </label>
+                      <input style="margin-left: 130px;" type=" text"> <br> <br>
+                      <label style="margin-left: 190px;">Meat
+                        <label style="margin-left: 150px; ">Fish <input type="radio">
+                            Cow  <input type="radio">
+                            Chicken <input type="radio"></label>
+                      </label> 
+                  </div>
+                  </div>
+                </fieldset> <br>
+                <input style="background-color: rgba(53, 51, 51, 0.68); border-color:white;" type="reset" name="reset"  value="Clear Order">
+                <input style="background-color: rgba(53, 51, 51, 0.68); border-color:white;" type="submit" name="submit" value="Place Order">
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
